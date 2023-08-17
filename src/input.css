@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+  .bg-transparent { background-color: 'transparent'; }
+
+  .form-sidebar{
+    @apply w-1/2 h-4/5 flex flex-col gap-8 py-12 px-8;
+  }
+
+  .active .circle {
+    @apply bg-Light-blue decoration-Marine-blue;
+  }
+
+  .spam--action {
+    @apply uppercase decoration-Light-gray text-sm;
+  }
+  
+  .circle {
+    @apply w-10 h-10 flex rounded-full items-center justify-center font-bold decoration-White border-solid border-2 border-White;
+  }
+
+  .step{
+    @apply flex items-center gap-1;
+  }
+
+  .step-content {
+    @apply  flex flex-col gap-3;
+  }
+
+  .label{
+    @apply decoration-Marine-blue flex items-center justify-between;
+  }
+
+  form .error {
+    @apply hidden decoration-Strawberry-red text-xs font-bold;
+  }
+
+  .plan-card{
+    @apply border border-s-Light-gray rounded-md w-36 h-44 cursor-pointer p-4 flex flex-col items-start justify-between;
+  }
+
+  .sw-active{
+    @apply decoration-Marine-blue;
+  }
+  
+  .prev-stp{
+    @apply mt-auto mb-8 border font-bold bg-transparent py-4 px-8 rounded-md decoration-Cool-gray cursor-pointer;
+  }
+
+  .next-stp{
+    @apply my-auto mb-8 ml-auto border py-4 px-8 rounded-md bg-Marine-blue decoration-White cursor-pointer;
+  }
+
+  .btns{
+    @apply flex items-center justify-between;
+  } 
+
+  .box {
+    @apply border-s-Cool-gray border rounded-md p-4 flex items-center cursor-pointer;
+  }
+
+  .step-1 form input {
+    @apply focus:outline-Purplish-blue p-4 border border-s-Cool-gray rounded-md font-medium text-xs;
+  }
+
+  .description{
+    @apply flex flex-col gap-1 ml-3;
+  }
+ 
+  .description label{
+    @apply decoration-Marine-blue font-bold 
+  }
+
+  .slider{
+    @apply absolute cursor-pointer h-4 w-4 bottom-0 top-0 left-0 right-0 bg-Marine-blue transition;
+  }
+
+  .slider::before{
+    @apply absolute content-none h-4 w-4 bottom-1 bg-White transition;
+  }
+
+  .header,
+  .title,
+  .exp{
+    @apply decoration-Cool-gray
+  }
+
+  .selected{
+    @apply border-2 border-s-Purplish-blue bg-Magnolia;
+  }
+
+  .description {
+    @apply flex flex-col gap-1 ml-3;
+  }
+
+  .description label{
+    @apply decoration-Marine-blue scale-125 select-none;
+  }
+
+  .slider{
+    @apply absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-Marine-blue duration-75;
+  }
+
+  .slider::before{
+    @apply absolute content-none w-4 h-4 left-4 bottom-4 bg-White duration-75;
+  }
+
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.hidden {
+  display: none;
+}
+
